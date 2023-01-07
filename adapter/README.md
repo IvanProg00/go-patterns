@@ -62,7 +62,8 @@ We will create an analytical service, that will send documents in XML format.
    ```
 
 5. Let's execute our app.
-   ```bash
+
+   ```plain
    <xml>xml document</xml>
    <xml>json document</xml>
    ```
