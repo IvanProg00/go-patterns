@@ -18,7 +18,7 @@ const (
 
 var ErrComputerNotFound = errors.New("computer not found")
 
-func New(compType Type) (Computer, error) {
+func Get(compType Type) (Computer, error) {
 	switch compType {
 	case LaptopType:
 		return NewLaptop(), nil

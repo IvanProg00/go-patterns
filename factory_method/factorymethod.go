@@ -8,27 +8,27 @@ import (
 )
 
 func Run() {
-	laptop, err := computer.New(computer.LaptopType)
+	laptop, err := computer.Get(computer.LaptopType)
 	if err != nil {
 		log.Fatalf("new laptop: %v", err)
 	}
 	printComputer(laptop)
 
-	server, err := computer.New(computer.ServerType)
+	server, err := computer.Get(computer.ServerType)
 	if err != nil {
 		log.Fatalf("new server: %v", err)
 	}
 	printComputer(server)
 
-	pc, err := computer.New(computer.PersonalComputerType)
+	pc, err := computer.Get(computer.PersonalComputerType)
 	if err != nil {
 		log.Fatalf("new personal computer: %v", err)
 	}
 	printComputer(pc)
 
-	_, err = computer.New("undefined computer")
+	_, err = computer.Get("undefined computer")
 	if err != nil {
-		fmt.Printf("ERROR: new undefined computer: %v", err)
+		fmt.Printf("ERROR: new undefined computer: %v\n", err)
 	}
 }
 
