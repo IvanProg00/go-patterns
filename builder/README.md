@@ -12,7 +12,6 @@ Let's create a factory that will build computers.
    ```go
    // computer/computer.go
 
-
    type Computer struct {
      Brand       string
      Core        int
