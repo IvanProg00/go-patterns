@@ -71,7 +71,6 @@ We will create a computer factory. Our factory will create 3 types of computers:
    ```go
    // factorymethod.go
 
-
    var ErrComputerNotFound = errors.New("computer not found")
 
    func Get(compType Type) (Computer, error) {
