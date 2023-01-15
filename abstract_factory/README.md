@@ -166,7 +166,6 @@ We will create a factory that will create monitors and computers of companies
    ```go
    // factory/factory.go
 
-
    type Brand string
 
    const (
