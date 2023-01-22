@@ -27,3 +27,37 @@ other in any combination.
      Scan()
    }
    ```
+
+2. Now we will create structures for our computers **Linux**, **Mac** and
+   **Windows**. We will write code only for Linux, but the same code will be for
+   other computers.
+
+   ```go
+   // pc/linux.go
+
+   type Linux struct {
+     scanner scanner.Scanner
+   }
+
+   func (pc *Linux) AddScanner(sc scanner.Scanner) {
+     pc.scanner = sc
+   }
+
+   func (pc *Linux) Scan() {
+     fmt.Println("scan linux")
+     pc.scanner.ScanFile()
+   }
+   ```
+
+3. And all we have to do is write the code for our scanners **HP** and **Expon**.
+   We will write code only for **HP**.
+
+   ```go
+   // scanner/hp.go
+
+   type HP struct{}
+
+   func (s *HP) ScanFile() {
+     fmt.Println("HP scans file")
+   }
+   ```
