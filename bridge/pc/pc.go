@@ -1,6 +1,6 @@
 package pc
 
-import "text/scanner"
+import "github.com/IvanProg00/go-patterns/bridge/scanner"
 
 type PC interface {
 	AddScanner(scanner scanner.Scanner)

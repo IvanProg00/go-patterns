@@ -11,9 +11,11 @@ func Run() {
 	epson := &scanner.Epson{}
 
 	// Computers
-	linux := &pc.Linux{}
-	windows := &pc.Windows{}
-	mac := &pc.Mac{}
+	var (
+		linux   pc.PC = &pc.Linux{}
+		windows pc.PC = &pc.Windows{}
+		mac     pc.PC = &pc.Mac{}
+	)
 
 	linux.AddScanner(hp)
 	linux.Scan()
