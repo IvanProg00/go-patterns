@@ -7,6 +7,7 @@ import (
 	"github.com/IvanProg00/go-patterns/adapter"
 	"github.com/IvanProg00/go-patterns/bridge"
 	"github.com/IvanProg00/go-patterns/builder"
+	"github.com/IvanProg00/go-patterns/facade"
 	factorymethod "github.com/IvanProg00/go-patterns/factory_method"
 )
 
@@ -29,6 +30,10 @@ func main() {
 
 	fmt.Println("Bridge")
 	bridge.Run()
+	printLine()
+
+	fmt.Println("Facade")
+	facade.Run()
 }
 
 func printLine() {
