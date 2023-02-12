@@ -12,18 +12,21 @@ func Run() {
 	if err != nil {
 		log.Fatalf("new laptop: %v", err)
 	}
+
 	printComputer(laptop)
 
 	server, err := computer.Get(computer.ServerType)
 	if err != nil {
 		log.Fatalf("new server: %v", err)
 	}
+
 	printComputer(server)
 
 	pc, err := computer.Get(computer.PersonalComputerType)
 	if err != nil {
 		log.Fatalf("new personal computer: %v", err)
 	}
+
 	printComputer(pc)
 
 	_, err = computer.Get("undefined computer")
