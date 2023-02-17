@@ -10,6 +10,7 @@ import (
 	"github.com/IvanProg00/go-patterns/decorator"
 	"github.com/IvanProg00/go-patterns/facade"
 	factorymethod "github.com/IvanProg00/go-patterns/factory_method"
+	"github.com/IvanProg00/go-patterns/state"
 )
 
 func main() {
@@ -39,6 +40,10 @@ func main() {
 
 	fmt.Println("Decorator")
 	decorator.Run()
+	printLine()
+
+	fmt.Println("State")
+	state.Run()
 }
 
 func printLine() {
