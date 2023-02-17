@@ -6,3 +6,5 @@
 4. [Abstract Factory](abstract_factory/)
 5. [Bridge](bridge/)
 6. [Facade](facade/)
+7. [Decorator](decorator/)
+8. [State](state/)
