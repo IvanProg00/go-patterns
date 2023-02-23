@@ -8,3 +8,4 @@
 6. [Facade](facade/)
 7. [Decorator](decorator/)
 8. [State](state/)
+9. [Observer](observer/)
