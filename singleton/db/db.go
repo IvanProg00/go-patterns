@@ -5,23 +5,23 @@ import (
 	"sync"
 )
 
-type Database struct {
-	mx          sync.Mutex
-	isConnected bool
-}
+type Database struct{}
 
-func New() *Database {
-	return &Database{}
-}
+var (
+	db *Database
+	mx = &sync.Mutex{}
+)
 
-func (db *Database) Connect() {
-	db.mx.Lock()
-	defer db.mx.Unlock()
+func Connect() *Database {
+	mx.Lock()
+	defer mx.Unlock()
 
-	if db.isConnected {
+	if db != nil {
 		fmt.Println("already connected to database")
 	} else {
 		fmt.Println("connecting to database")
-		db.isConnected = true
+		db = &Database{}
 	}
+
+	return db
 }
