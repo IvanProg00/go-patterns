@@ -11,3 +11,4 @@
 9. [Observer](observer/)
 10. [Composite](composite/)
 11. [Chain of Responsibility](chainofresponsibility/)
+12. [Singleton](singleton/)
