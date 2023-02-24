@@ -7,6 +7,7 @@ import (
 	"github.com/IvanProg00/go-patterns/adapter"
 	"github.com/IvanProg00/go-patterns/bridge"
 	"github.com/IvanProg00/go-patterns/builder"
+	"github.com/IvanProg00/go-patterns/chainofresponsibility"
 	"github.com/IvanProg00/go-patterns/composite"
 	"github.com/IvanProg00/go-patterns/decorator"
 	"github.com/IvanProg00/go-patterns/facade"
@@ -54,6 +55,10 @@ func main() {
 
 	fmt.Println("Composite")
 	composite.Run()
+	printLine()
+
+	fmt.Println("Chain of Responsibility")
+	chainofresponsibility.Run()
 }
 
 func printLine() {
