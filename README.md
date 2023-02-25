@@ -13,3 +13,4 @@
 11. [Chain of Responsibility](chainofresponsibility/)
 12. [Singleton](singleton/)
 13. [Strategy](strategy/)
+14. [Iterator](iterator/)
