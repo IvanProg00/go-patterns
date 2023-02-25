@@ -12,6 +12,7 @@ import (
 	"github.com/IvanProg00/go-patterns/decorator"
 	"github.com/IvanProg00/go-patterns/facade"
 	factorymethod "github.com/IvanProg00/go-patterns/factory_method"
+	"github.com/IvanProg00/go-patterns/iterator"
 	"github.com/IvanProg00/go-patterns/observer"
 	"github.com/IvanProg00/go-patterns/singleton"
 	"github.com/IvanProg00/go-patterns/state"
@@ -69,6 +70,10 @@ func main() {
 
 	fmt.Println("Strategy")
 	strategy.Run()
+	printLine()
+
+	fmt.Println("Iterator")
+	iterator.Run()
 }
 
 func printLine() {
