@@ -15,6 +15,7 @@ import (
 	"github.com/IvanProg00/go-patterns/iterator"
 	"github.com/IvanProg00/go-patterns/observer"
 	"github.com/IvanProg00/go-patterns/singleton"
+	"github.com/IvanProg00/go-patterns/snapshot"
 	"github.com/IvanProg00/go-patterns/state"
 	"github.com/IvanProg00/go-patterns/strategy"
 )
@@ -74,6 +75,10 @@ func main() {
 
 	fmt.Println("Iterator")
 	iterator.Run()
+	printLine()
+
+	fmt.Println("Snapshot")
+	snapshot.Run()
 }
 
 func printLine() {

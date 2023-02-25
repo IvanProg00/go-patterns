@@ -14,3 +14,4 @@
 12. [Singleton](singleton/)
 13. [Strategy](strategy/)
 14. [Iterator](iterator/)
+15. [Snapshot](snapshot/)
