@@ -15,6 +15,7 @@ import (
 	"github.com/IvanProg00/go-patterns/observer"
 	"github.com/IvanProg00/go-patterns/singleton"
 	"github.com/IvanProg00/go-patterns/state"
+	"github.com/IvanProg00/go-patterns/strategy"
 )
 
 func main() {
@@ -64,6 +65,10 @@ func main() {
 
 	fmt.Println("Singleton")
 	singleton.Run()
+	printLine()
+
+	fmt.Println("Strategy")
+	strategy.Run()
 }
 
 func printLine() {
