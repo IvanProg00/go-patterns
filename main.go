@@ -14,6 +14,7 @@ import (
 	factorymethod "github.com/IvanProg00/go-patterns/factory_method"
 	"github.com/IvanProg00/go-patterns/iterator"
 	"github.com/IvanProg00/go-patterns/observer"
+	"github.com/IvanProg00/go-patterns/proxy"
 	"github.com/IvanProg00/go-patterns/singleton"
 	"github.com/IvanProg00/go-patterns/snapshot"
 	"github.com/IvanProg00/go-patterns/state"
@@ -79,6 +80,10 @@ func main() {
 
 	fmt.Println("Snapshot")
 	snapshot.Run()
+	printLine()
+
+	fmt.Println("Proxy")
+	proxy.Run()
 }
 
 func printLine() {
