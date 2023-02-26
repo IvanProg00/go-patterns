@@ -16,3 +16,4 @@
 14. [Iterator](iterator/)
 15. [Snapshot](snapshot/)
 16. [Proxy](proxy/)
+17. [Mediator](mediator/)

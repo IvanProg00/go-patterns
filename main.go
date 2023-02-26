@@ -13,6 +13,7 @@ import (
 	"github.com/IvanProg00/go-patterns/facade"
 	factorymethod "github.com/IvanProg00/go-patterns/factory_method"
 	"github.com/IvanProg00/go-patterns/iterator"
+	"github.com/IvanProg00/go-patterns/mediator"
 	"github.com/IvanProg00/go-patterns/observer"
 	"github.com/IvanProg00/go-patterns/proxy"
 	"github.com/IvanProg00/go-patterns/singleton"
@@ -84,6 +85,10 @@ func main() {
 
 	fmt.Println("Proxy")
 	proxy.Run()
+	printLine()
+
+	fmt.Println("Mediator")
+	mediator.Run()
 }
 
 func printLine() {
