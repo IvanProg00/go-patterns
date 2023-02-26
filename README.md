@@ -15,3 +15,4 @@
 13. [Strategy](strategy/)
 14. [Iterator](iterator/)
 15. [Snapshot](snapshot/)
+16. [Proxy](proxy/)
